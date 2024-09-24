@@ -1,18 +1,22 @@
+//function to calculate the area of a rectangle
 function calculateRectangleArea(){
 
-    //get value of triangle base
+    //get value of rectangle width
     const rectangleWidthInput = document.getElementById('rectangle-width').value;
     const width = parseFloat(rectangleWidthInput);
 
-    //get value of triangle height
+    //get value of rectangle length
     const rectangleLengthInput = document.getElementById('rectangle-length').value;
     const length = parseFloat(rectangleLengthInput);
 
-    //calculate the triangle area
+    //calculate the rectangle area
     const rectangleArea = width * length;
-    console.log(rectangleArea);
 
-    //display the triangle area on the output field
-    const displayRectangleArea = document.getElementById('triangle-area');
+    //display the rectangle area on the output field
+    const displayRectangleArea = document.getElementById('result');
     displayRectangleArea.innerText = rectangleArea;
+
+    //clear the input fields
+    document.getElementById('rectangle-width').value = '';
+    document.getElementById('rectangle-length').value = '';
 }
