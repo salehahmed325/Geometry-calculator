@@ -40,8 +40,10 @@
             <h2 class="card-title">Triangle</h2>
             <p>Area (A) = 0.5 X b X h</p>
             <div>
+              <!-- base -->
               <input name="" id="triangle-base" placeholder="Base" type="text"
                 class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
+              <!-- height -->
               <input name="" id="triangle-height" placeholder="Height" type="text"
                 class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
             </div>
@@ -59,13 +61,13 @@
             <h2 class="card-title">Rectangle</h2>
             <p>Area (A) = w X l</p>
             <div>
-              <input name="" id="" placeholder="Width" type="text"
+              <input name="" id="rectangle-width" placeholder="Width" type="text"
                 class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
-              <input name="" id="" placeholder="Length" type="text"
+              <input name="" id="rectangle-length" placeholder="Length" type="text"
                 class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
             </div>
             <div class="card-actions justify-center">
-              <button class="btn btn-primary w-60">Calculate</button>
+              <button onclick="calculateRectangleArea()" class="btn btn-primary w-60">Calculate</button>
             </div>
           </div>
         </div>
@@ -149,12 +151,13 @@
       <!-- Area calculator -->
       <div class="w-72 h-60 border-2 border-gray-100 rounded-xl m-3">
         <h3 class="text-center text-2xl p-4 underline">Area Calculator</h3>
-        <p class="text-center text-xl p-4">Area Of The Triangle is: <span id="triangle-are"></span><span>
+        <p class="text-center text-xl p-4">Area is: <span id="triangle-area"></span><span>
             cm<sup>2</sup></span></p>
       </div>
     </div>
   </main>
   <script src="js/triangle-calculate.js"></script>
+  <script src="js/rectangle-calculate.js"></script>
 </body>
 
 </html>

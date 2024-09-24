@@ -13,6 +13,6 @@ function calculateTriangleArea(){
     console.log(triangleArea);
 
     //display the triangle area on the output field
-    const displayTriangleArea = document.getElementById('triangle-are');
+    const displayTriangleArea = document.getElementById('triangle-area');
     displayTriangleArea.innerText = triangleArea;
 }
