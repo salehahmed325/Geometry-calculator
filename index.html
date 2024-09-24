@@ -83,11 +83,11 @@
             <p>Area (A) = b X h</p>
             <div>
               <!-- base -->
-              <input name="" id="parallelogram-base" placeholder="base" type="text" class="w-20 bg-slate-100 p-2 rounded-md text-md">
-              <span>cm</span>
+              <input name="" id="parallelogram-base" placeholder="base" type="text"
+                class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
               <!-- height -->
-              <input name="" id="parallelogram-height" placeholder="height" type="text" class="w-20 bg-slate-100 p-2 rounded-md text-md">
-              <span>cm</span>
+              <input name="" id="parallelogram-height" placeholder="height" type="text"
+                class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
             </div>
             <div class="card-actions justify-center">
               <button onclick="calculateParallelogramArea()" class="btn btn-primary w-60">Calculate</button>
@@ -101,15 +101,17 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Rhombus</h2>
-            <p>Area (A) = 0.5 X d <sub>1</sub> X d<sub>2</sub></p>
+            <p>Area (A) = (d<sub>1</sub> X d<sub>2</sub>)/2</p>
             <div>
-              <input name="" id="" placeholder="d" type="text" class="w-20 bg-slate-100 p-2 rounded-md text-md">
-              <span>cm</span>
-              <input name="" id="" placeholder="d" type="text" class="w-20 bg-slate-100 p-2 rounded-md text-md">
-              <span>cm</span>
+              <!-- Diagonal1 -->
+              <input name="" id="rhombus-diagonal1" placeholder="Diagonal" type="text"
+                class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
+              <!-- Diagonal2 -->
+              <input name="" id="rhombus-diagonal2" placeholder="Diagonal" type="text"
+                class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
             </div>
             <div class="card-actions justify-center">
-              <button class="btn btn-primary w-60">Calculate</button>
+              <button onclick="calculateRhombusArea()" class="btn btn-primary w-60">Calculate</button>
             </div>
           </div>
         </div>
@@ -163,6 +165,7 @@
   <script src="js/triangle-calculate.js"></script>
   <script src="js/rectangle-calculate.js"></script>
   <script src="js/parallelogram-calculate.js"></script>
+  <script src="js/rhombus-calculate.js"></script>
 </body>
 
 </html>
