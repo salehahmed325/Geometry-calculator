@@ -10,7 +10,7 @@ function calculateRhombusArea(){
     const diagonal2 = parseFloat(rhombusDiagonal2Input);
 
     //calculate the rhombus area
-    const rhombusArea = (diagonal1 * diagonal2)/2;
+    const rhombusArea = (diagonal1 * diagonal2) / 2;
 
     //display the parallelogram area on the output field
     const displayRhombusArea = document.getElementById('result');

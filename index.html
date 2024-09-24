@@ -42,10 +42,10 @@
             <div>
               <!-- base -->
               <input name="" id="triangle-base" placeholder="Base" type="text"
-                class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
+                class="w-20 bg-slate-100 p-2 rounded-md text-sm"><span>cm</span>
               <!-- height -->
               <input name="" id="triangle-height" placeholder="Height" type="text"
-                class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
+                class="w-20 bg-slate-100 p-2 rounded-md text-sm"><span>cm</span>
             </div>
             <div class="card-actions justify-center">
               <button onclick="calculateTriangleArea()" class="btn btn-primary w-60">Calculate</button>
@@ -63,10 +63,10 @@
             <div>
               <!-- width -->
               <input name="" id="rectangle-width" placeholder="Width" type="text"
-                class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
+                class="w-20 bg-slate-100 p-2 rounded-md text-sm"><span>cm</span>
               <!-- length -->
               <input name="" id="rectangle-length" placeholder="Length" type="text"
-                class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
+                class="w-20 bg-slate-100 p-2 rounded-md text-sm"><span>cm</span>
             </div>
             <div class="card-actions justify-center">
               <button onclick="calculateRectangleArea()" class="btn btn-primary w-60">Calculate</button>
@@ -84,10 +84,10 @@
             <div>
               <!-- base -->
               <input name="" id="parallelogram-base" placeholder="base" type="text"
-                class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
+                class="w-20 bg-slate-100 p-2 rounded-md text-sm"><span>cm</span>
               <!-- height -->
               <input name="" id="parallelogram-height" placeholder="height" type="text"
-                class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
+                class="w-20 bg-slate-100 p-2 rounded-md text-sm"><span>cm</span>
             </div>
             <div class="card-actions justify-center">
               <button onclick="calculateParallelogramArea()" class="btn btn-primary w-60">Calculate</button>
@@ -104,11 +104,11 @@
             <p>Area (A) = (d<sub>1</sub> X d<sub>2</sub>)/2</p>
             <div>
               <!-- Diagonal1 -->
-              <input name="" id="rhombus-diagonal1" placeholder="Diagonal" type="text"
-                class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
+              <input name="" id="rhombus-diagonal1" placeholder="Diagonal1" type="text"
+                class="w-20 bg-slate-100 p-2 rounded-md text-sm"><span>cm</span>
               <!-- Diagonal2 -->
-              <input name="" id="rhombus-diagonal2" placeholder="Diagonal" type="text"
-                class="w-20 bg-slate-100 p-2 rounded-md text-md"><span>cm</span>
+              <input name="" id="rhombus-diagonal2" placeholder="Diagonal2" type="text"
+                class="w-20 bg-slate-100 p-2 rounded-md text-sm"><span>cm</span>
             </div>
             <div class="card-actions justify-center">
               <button onclick="calculateRhombusArea()" class="btn btn-primary w-60">Calculate</button>
@@ -124,13 +124,15 @@
             <h2 class="card-title">Pentagon</h2>
             <p>Area (A) = 0.5 X p X b</p>
             <div>
-              <input name="" id="" placeholder="p" type="text" class="w-20 bg-slate-100 p-2 rounded-md text-md">
-              <span>cm</span>
-              <input name="" id="" placeholder="b" type="text" class="w-20 bg-slate-100 p-2 rounded-md text-md">
-              <span>cm</span>
+              <!-- Perimeter -->
+              <input name="" id="pentagon-perimeter" placeholder="perimeter" type="text"
+                class="w-20 bg-slate-100 p-2 rounded-md text-sm"><span>cm</span>
+              <!-- Base -->
+              <input name="" id="pentagon-base" placeholder="base" type="text"
+                class="w-20 bg-slate-100 p-2 rounded-md text-sm"><span>cm</span>
             </div>
             <div class="card-actions justify-center">
-              <button class="btn btn-primary w-60">Calculate</button>
+              <button onclick="calculatePentagonArea()" class="btn btn-primary w-60">Calculate</button>
             </div>
           </div>
         </div>
@@ -166,6 +168,7 @@
   <script src="js/rectangle-calculate.js"></script>
   <script src="js/parallelogram-calculate.js"></script>
   <script src="js/rhombus-calculate.js"></script>
+  <script src="js/pentagon-calculate.js"></script>
 </body>
 
 </html>
