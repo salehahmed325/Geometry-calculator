@@ -101,7 +101,7 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Rhombus</h2>
-            <p>Area (A) = (d<sub>1</sub> X d<sub>2</sub>)/2</p>
+            <p>Area (A) = (d<sub>1</sub> X d<sub>2</sub>) / 2</p>
             <div>
               <!-- Diagonal1 -->
               <input name="" id="rhombus-diagonal1" placeholder="Diagonal1" type="text"
@@ -143,15 +143,17 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Ellipse</h2>
-            <p>Area (A) = ab</p>
+            <p>Area (A) = <span>&pi;</span> X a X b</p>
             <div>
-              <input name="" id="" placeholder="a" type="text" class="w-20 bg-slate-100 p-2 rounded-md text-md">
-              <span>cm</span>
-              <input name="" id="" placeholder="b" type="text" class="w-20 bg-slate-100 p-2 rounded-md text-md">
-              <span>cm</span>
+              <!-- a axis -->
+              <input name="" id="ellipse-a-axis" placeholder="a axis" type="text"
+                class="w-20 bg-slate-100 p-2 rounded-md text-sm"><span>cm</span>
+              <!-- b axis -->
+              <input name="" id="ellipse-b-axis" placeholder="b axis" type="text"
+                class="w-20 bg-slate-100 p-2 rounded-md text-sm"><span>cm</span>
             </div>
             <div class="card-actions justify-center">
-              <button class="btn btn-primary w-60">Calculate</button>
+              <button onclick="calculateEllipseArea()" class="btn btn-primary w-60">Calculate</button>
             </div>
           </div>
         </div>
@@ -169,6 +171,7 @@
   <script src="js/parallelogram-calculate.js"></script>
   <script src="js/rhombus-calculate.js"></script>
   <script src="js/pentagon-calculate.js"></script>
+  <script src="js/ellipse-calculate.js"></script>
 </body>
 
 </html>
